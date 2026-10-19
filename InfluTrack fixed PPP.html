@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/User/Downloads/WEB%20SIM%202%20fixed.html -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InfluTrack — Affiliate Management Platform</title>
+<style>
+:root{--ink:#172033;--muted:#6f788a;--line:#e8eaf0;--bg:#f7f8fc;--white:#fff;--accent:#6c5ce7;--accent2:#8b7cf6;--green:#20a779;--orange:#f59e0b;--red:#e05252}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}
+button{font:inherit;cursor:pointer;border:0}.app{display:flex;min-height:100vh}.side{width:245px;background:#fff;border-right:1px solid var(--line);padding:26px 18px;position:fixed;inset:0 auto 0 0}.logo{font-weight:800;font-size:23px;margin:0 12px 5px}.logo span{color:var(--accent)}.tag{font-size:11px;color:var(--muted);margin:0 12px 28px}.nav button{display:flex;width:100%;padding:12px 14px;margin:4px 0;border-radius:10px;background:transparent;color:#60697a;text-align:left;gap:12px}.nav button.active,.nav button:hover{background:#f0eeff;color:var(--accent);font-weight:700}.main{margin-left:245px;width:calc(100% - 245px);padding:28px 36px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.eyebrow{font-size:13px;color:var(--muted)}h1{font-size:28px;margin:4px 0}.profile{display:flex;align-items:center;gap:10px}.avatar{width:40px;height:40px;border-radius:50%;background:#e9e5ff;color:var(--accent);display:grid;place-items:center;font-weight:800}.hero{background:linear-gradient(110deg,#6656d9,#8a7af1);color:white;border-radius:18px;padding:25px 28px;display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.hero h2{margin:0 0 7px;font-size:21px}.hero p{margin:0;opacity:.85;font-size:14px}.hero button{background:white;color:var(--accent);padding:11px 17px;border-radius:10px;font-weight:700}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}.label{font-size:12px;color:var(--muted)}.value{font-size:25px;font-weight:800;margin:8px 0}.trend{font-size:12px;color:var(--green)}.grid{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin-top:18px}.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}.panelhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.panel h3{margin:0;font-size:16px}.muted{color:var(--muted);font-size:12px}.campaign{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}.campaign:last-child{border-bottom:0}.campname{font-weight:700;font-size:14px}.badge{font-size:11px;padding:5px 8px;border-radius:20px;background:#eaf8f2;color:var(--green)}.badge.orange{background:#fff5df;color:#b77900}.mini{margin-top:7px;font-size:12px;color:var(--muted)}.score{text-align:center;padding:10px}.circle{width:112px;height:112px;border-radius:50%;background:conic-gradient(var(--accent) 0 87%,#ececf2 87%);display:grid;place-items:center;margin:8px auto 12px}.circle:after{content:"87";width:82px;height:82px;background:white;border-radius:50%;display:grid;place-items:center;font-size:25px;font-weight:800}.menu-section{display:none}.menu-section.show{display:block}.table{width:100%;border-collapse:collapse;font-size:13px}.table th,.table td{padding:13px 8px;border-bottom:1px solid var(--line);text-align:left}.table th{color:var(--muted);font-size:11px;text-transform:uppercase}.primary{background:var(--accent);color:white;padding:10px 15px;border-radius:9px;font-weight:700}.secondary{background:#f1efff;color:var(--accent);padding:9px 13px;border-radius:9px;font-weight:700}.modal{display:none;position:fixed;inset:0;background:#0005;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modalbox{background:white;width:min(560px,100%);border-radius:16px;padding:24px}.modalbox h2{margin-top:0}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700}.field input,.field select{padding:10px;border:1px solid #ddd;border-radius:8px}.actions{display:flex;justify-content:flex-end;gap:9px;margin-top:18px}@media(max-width:900px){.side{width:190px}.main{margin-left:190px;width:calc(100% - 190px);padding:22px}.cards{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}}@media(max-width:650px){.side{display:none}.main{margin:0;width:100%}.cards{grid-template-columns:1fr}.hero{align-items:flex-start;gap:15px;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="side">
+  <div class="logo">Influ<span>Track</span></div>
+  <div class="tag">Affiliate Management Platform</div>
+  <div class="nav">
+    <button class="active" onclick="show('dashboard',this)">▦ &nbsp; Dashboard</button>
+    <button onclick="show('campaign',this)">◉ &nbsp; Campaign</button>
+    <button onclick="show('performance',this)">↗ &nbsp; Performance</button>
+    <button onclick="show('commission',this)">◎ &nbsp; Komisi</button>
+    <button onclick="show('evaluation',this)">★ &nbsp; Evaluasi</button>
+    <button onclick="show('profile',this)">♙ &nbsp; Profil</button>
+  </div>
+</aside>
+
+<main class="main">
+<div class="top"><div><div class="eyebrow">Food Blogger Affiliate</div><h1 id="title">Dashboard</h1></div><div class="profile"><span class="muted">@InfluTrack</span><div class="avatar">FS</div></div></div>
+
+<section id="dashboard" class="menu-section show">
+<div class="hero"><div><h2>Selamat datang, Foodie Semarang 👋</h2><p>InfluTrack adalah platform berbasis web yang mempermudah bisnis kuliner dan food blogger mengelola program afiliasi secara akurat. Mulai dari pendaftaran, pemantauan link &amp; kode promo, pelacakan transaksi real-time, hingga perhitungan komisi dan skor kinerja semua terintegrasi dalam satu sistem.
+
+</p></div><button onclick="openModal()">+ Daftar Campaign</button></div>
+<div class="cards">
+<div class="card"><div class="label">Total Klik Link</div><div class="value">1.250</div><div class="trend">↑ 18,4% bulan ini</div></div>
+<div class="card"><div class="label">Total Transaksi</div><div class="value">125</div><div class="trend">↑ 12,1% bulan ini</div></div>
+<div class="card"><div class="label">Nilai Penjualan</div><div class="value">Rp7,5 jt</div><div class="trend">↑ 15,8% bulan ini</div></div>
+<div class="card"><div class="label">Total Komisi</div><div class="value">Rp750 rb</div><div class="trend">↑ 10,5% bulan ini</div></div>
+</div>
+<div class="grid">
+<div class="panel"><div class="panelhead"><h3>Campaign Aktif</h3><button class="secondary" onclick="show('campaign',document.querySelectorAll('.nav button')[1])">Lihat semua</button></div>
+<div class="campaign"><div><div class="campname">Runa Coffee</div><div class="mini">Komisi 10% · s/d 30 Nov 2026</div></div><span class="badge">Aktif</span></div>
+<div class="campaign"><div><div class="campname">Identix Coffee UNNES</div><div class="mini">Komisi 10% · s/d 30 Nov 2026</div></div><span class="badge">Aktif</span></div>
+<div class="campaign"><div><div class="campname">Keizai Coffee</div><div class="mini">Komisi 10% · s/d 15 Nov 2026</div></div><span class="badge">Aktif</span></div>
+<div class="campaign"><div><div class="campname">Ayam Geprek Brebes UNNES</div><div class="mini">Komisi 5% · s/d 30 Nov 2026</div></div><span class="badge">Aktif</span></div>
+<div class="campaign"><div><div class="campname">Katsukai</div><div class="mini">Komisi 10% · s/d 25 Okt 2026</div></div><span class="badge orange">Segera berakhir</span></div>
+<div class="campaign"><div><div class="campname">Ayam Jagoan</div><div class="mini">Komisi 5% · s/d 24 Okt 2026</div></div><span class="badge orange">Segera berakhir</span></div>
+<div class="campaign"><div><div class="campname">Numanke</div><div class="mini">Komisi 5% · s/d 15 Nov 2026</div></div><span class="badge">Aktif</span></div>
+<div class="campaign"><div><div class="campname">Teh Raya</div><div class="mini">Komisi 5% · s/d 26 Okt 2026</div></div><span class="badge orange">Segera berakhir</span></div>
+<div class="campaign"><div><div class="campname">Bobakar</div><div class="mini">Komisi 5% · s/d 27 Okt 2026</div></div><span class="badge orange">Segera berakhir</span></div>
+<div class="campaign"><div><div class="campname">Kolu</div><div class="mini">Komisi 10% · s/d 25 Okt 2026</div></div><span class="badge orange">Segera berakhir</span></div>
+</div>
+<div class="panel score"><h3>Performance Score</h3><div class="circle"></div><b>Excellent Performance</b><div class="muted">Status kerja sama: <strong style="color:var(--green)">Aktif</strong></div></div>
+</div>
+</section>
+
+<section id="campaign" class="menu-section">
+<div class="panel"><div class="panelhead"><h3>Campaign Tersedia</h3><button class="primary" onclick="openModal()">+ Daftar Campaign</button></div>
+<table class="table"><tbody><tr><th>Campaign</th><th>Brand</th><th>Komisi</th><th>Periode</th><th>Status</th></tr>
+<tr><td><b>Runa Coffee</b><br><span class="muted">Coffee Shop</span></td><td>Runa Coffee</td><td>10%</td><td>1 Okt - 30 Nov</td><td><span class="badge">Tersedia (2 kuota)</span></td></tr>
+<tr><td><b>Identix Coffee UNNES</b><br><span class="muted">Coffee Shop</span></td><td>Identix Coffee UNNES</td><td>10%</td><td>1 Okt - 30 Nov</td><td><span class="badge">Tersedia (1 kuota)</span></td></tr>
+<tr><td><b>Keizai Coffee</b><br><span class="muted">Coffee Shop</span></td><td>Keizai Coffee</td><td>10%</td><td>1 Okt - 15 Nov</td><td><span class="badge">Tersedia (1 kuota)</span></td></tr>
+<tr><td><b>Ayam Geprek Brebes UNNES</b><br><span class="muted">Tempat Makan</span></td><td>Ayam Geprek Brebes UNNES</td><td>5%</td><td>1 Okt - 30 Nov</td><td><span class="badge">Tersedia (2 kuota)</span></td></tr>
+<tr><td><b>Katsukai</b><br><span class="muted">Tempat Makan</span></td><td>Katsukai</td><td>10%</td><td>1 Okt - 25 Okt</td><td><span class="badge">Tersedia (1 kuota)</span></td></tr>
+<tr><td><b>Ayam Jagoan</b><br><span class="muted">Tempat Makan</span></td><td>Ayam Jagoan</td><td>5%</td><td>1 Okt - 24 Okt</td><td><span class="badge orange">Tidak Tersedia</span></td></tr>
+<tr><td><b>Numanke</b><br><span class="muted">Tempat Makan</span></td><td>Numanke</td><td>5%</td><td>1 Okt - 15 Nov</td><td><span class="badge orange">Tidak Tersedia</span></td></tr>
+<tr><td><b>Teh Raya</b><br><span class="muted">Kedai Minuman</span></td><td>Teh Raya</td><td>5%</td><td>1 Okt - 26 Okt</td><td><span class="badge orange">Tidak Tersedia</span></td></tr>
+<tr><td><b>Bobakar</b><br><span class="muted">Kedai Minuman</span></td><td>Bobakar</td><td>5%</td><td>1 Okt - 27 Okt</td><td><span class="badge">Tersedia (1 kuota)</span></td></tr>
+<tr><td><b>Kolu</b><br><span class="muted">Coffee Shop</span></td><td>Kolu</td><td>10%</td><td>1 Okt - 25 Okt</td><td><span class="badge orange">Tidak Tersedia</span></td></tr>
+</tbody></table></div>
+</section>
+
+<section id="performance" class="menu-section">
+<div class="cards"><div class="card"><div class="label">Klik</div><div class="value">1.250</div></div><div class="card"><div class="label">Transaksi</div><div class="value">125</div></div><div class="card"><div class="label">Conversion Rate</div><div class="value">10%</div></div><div class="card"><div class="label">Repeat Order</div><div class="value">32</div></div></div>
+<div class="panel" style="margin-top:18px"><div class="panelhead"><h3>Performance per Campaign</h3><span class="muted">Oktober 2026</span></div>
+<table class="table"><tbody><tr><th>Campaign</th><th>Klik</th><th>Transaksi</th><th>Sales</th><th>Score</th></tr>
+<tr><td>Runa Coffee</td><td>650</td><td>72</td><td>Rp4,2 jt</td><td>92</td></tr>
+<tr><td>Identix Coffee UNNES</td><td>410</td><td>35</td><td>Rp2,1 jt</td><td>84</td></tr>
+<tr><td>Keizai Coffee</td><td>190</td><td>18</td><td>Rp1,2 jt</td><td>81</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="commission" class="menu-section">
+<div class="cards"><div class="card"><div class="label">Komisi Bulan Ini</div><div class="value">Rp750 rb</div></div><div class="card"><div class="label">Komisi Dibayar</div><div class="value">Rp420 rb</div></div><div class="card"><div class="label">Menunggu Pembayaran</div><div class="value">Rp330 rb</div></div></div>
+<div class="panel" style="margin-top:18px"><h3>Riwayat Komisi</h3><table class="table"><tbody><tr><th>Campaign</th><th>Penjualan</th><th>Komisi</th><th>Status</th></tr><tr><td>Runa Coffee</td><td>Rp4.200.000</td><td>Rp420.000</td><td><span class="badge">Dibayar</span></td></tr><tr><td>Identix Coffee UNNES</td><td>Rp2.100.000</td><td>Rp210.000</td><td><span class="badge orange">Diproses</span></td></tr><tr><td>Keizai Coffee</td><td>Rp1.200.000</td><td>Rp120.000</td><td><span class="badge orange">Diproses</span></td></tr></tbody></table></div>
+</section>
+
+<section id="evaluation" class="menu-section">
+<div class="panel"><h3>Evaluasi &amp; Status Kerja Sama</h3><div class="grid" style="margin-top:10px"><div><p><b>Performance Score: 87/100</b></p><p class="muted">Engagement · Conversion · Sales · Konsistensi konten · Repeat order</p><span class="badge">Kerja sama aktif</span></div><div><p><b>Hasil evaluasi terakhir</b></p><p class="muted">Performa memenuhi standar campaign dan target penjualan perusahaan.</p></div></div></div>
+</section>
+
+<section id="profile" class="menu-section">
+<div class="panel"><div class="panelhead"><h3>Profil Affiliate</h3><button class="primary">Edit Profil</button></div><table class="table"><tbody><tr><td>Nama</td><td><b>Foodie Semarang</b></td></tr><tr><td>Platform</td><td>TikTok · Instagram</td></tr><tr><td>Niche</td><td>Food &amp; Beverage</td></tr><tr><td>Followers</td><td>25.000</td></tr><tr><td>Average Views</td><td>15.000</td></tr><tr><td>Engagement Rate</td><td>6,2%</td></tr><tr><td>Domisili</td><td>Semarang</td></tr><tr><td>Status Verifikasi</td><td><span class="badge">Terverifikasi</span></td></tr></tbody></table></div>
+</section>
+</main>
+</div>
+
+<div class="modal" id="modal"><div class="modalbox"><h2>Daftar Campaign</h2><p class="muted">Pilih campaign yang ingin kamu ikuti.</p><div class="formgrid"><div class="field full"><label>Campaign</label><select><option>Runa Coffee</option><option>Identix Coffee UNNES</option><option>Keizai Coffee</option><option>Ayam Geprek Brebes UNNES</option><option>Katsukai</option><option>Ayam Jagoan</option><option>Numanke</option><option>Teh Raya</option><option>Bobakar</option><option>Kolu</option></select></div><div class="field"><label>Platform Promosi</label><select><option>TikTok</option><option>Instagram</option></select></div><div class="field"><label>Username</label><input value="@foodie_semarang"></div></div><div class="actions"><button class="secondary" onclick="closeModal()">Batal</button><button class="primary" onclick="submitCampaign()">Kirim Pendaftaran</button></div></div></div>
+
+<script>
+const names={dashboard:'Dashboard',campaign:'Campaign',performance:'Performance',commission:'Komisi',evaluation:'Evaluasi',profile:'Profil'};
+function show(id,btn){document.querySelectorAll('.menu-section').forEach(x=>x.classList.remove('show'));document.getElementById(id).classList.add('show');document.getElementById('title').textContent=names[id];document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));if(btn)btn.classList.add('active')}
+function openModal(){document.getElementById('modal').classList.add('open')}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+function submitCampaign(){closeModal();alert('Pendaftaran campaign berhasil dikirim dan menunggu verifikasi admin.')}
+</script>
+
+</body></html>
